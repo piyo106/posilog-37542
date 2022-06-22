@@ -1,2 +1,80 @@
-<h1>Logs#index</h1>
-<p>Find me in app/views/logs/index.html.erb</p>
+<div class="wrapper">
+  <%= render 'shared/header' %>
+  <main class="wrap_logs">
+    <div class="logs-goal">
+      <div class="logs-goal-title">
+        <h3 class="logs-goal-title-text">オリジナルアプリを作成する！</h3>
+      </div>
+      <div class="logs-goal-purpose">
+        <p class="logs-goal-purpose-text">
+          プログラマー転職を成功させるため！！
+        </p>
+      </div>
+    </div>
+    <div class="logs-list">
+      <div class="log">
+        <div class="log-category">
+          <span class="ooda">Observe</span>
+        </div>
+        <div class="log-content">
+          <p class="log-date">
+            2022/6/10
+          </p>
+          <p class="log-content-text">
+            オリジナルアプリを作成途中にデプロイが上手くいかなかった。なんてこった！！
+          </p>
+        </div>
+      </div>
+      <div class="log">
+        <div class="log-category">
+          <span class="ooda">Orient</span>
+        </div>
+        <div class="log-content">
+          <p class="log-date">
+            2022/6/10
+          </p>
+          <p class="log-content-text">
+            asset compiled errorsとなっているのでCSSとかのアセットファイルに問題があるのかも
+          </p>
+        </div>
+      </div>
+      <div class="log">
+        <div class="log-category">
+          <span class="ooda">Decide</span>
+        </div>
+        <div class="log-content">
+          <p class="log-date">
+            2022/6/10
+          </p>
+          <p class="log-content-text">
+            一度CSSファイルをコメントアウトしてみてデプロイしてみよう！
+          </p>
+        </div>
+      </div>
+      <div class="log">
+        <div class="log-category">
+          <span class="ooda">Act</span>
+        </div>
+        <div class="log-content">
+          <p class="log-date">
+            2022/6/10
+          </p>
+          <p class="log-content-text">
+            コメントアウトしても依然エラーのままだ。。。
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <form action="">
+    <select name="" id="" class="category-select" size="1">
+      <option value="">OODA選択</option>
+      <option value="1">Observe</option>
+      <option value="2">Orient</option>
+      <option value="3">Decide</option>
+      <option value="4">Act</option>
+    </select>
+    <textarea name="" id="" class="content-form"></textarea>
+    <input type="submit" class="submit-btn" value="記録する">
+  </form>
+</div>

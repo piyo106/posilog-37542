@@ -1,0 +1,201 @@
+// universal
+
+$color-main: #FFF4ED;
+$color-second: #FFC679;
+$color-third: #FFBC61;
+$color-point: #F99292;
+$color-string: #757575;
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 50px;
+  background-color: $color-main;
+}
+
+// header
+.top-page-header {
+  width: 100vw;
+  height: 70px;
+  padding: 2vh 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-second;
+  position: fixed;
+  top: 0;
+  h1 {
+    font-size: 25px;
+  }
+  .goal-btn {
+    background-color: $color-point;
+    padding: 12PX;
+    border-radius: 40px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+// main(goals#index)
+
+.wrap {
+  width: 100vw;
+  padding: 70px 10vw 0;
+  display: flex;
+}
+
+h2 {
+  color: $color-third;
+}
+
+.side-bar {
+  width: 20vw;
+  padding: 0 2vw;
+  .side-bar-header h2 {
+    font-size: 18px;
+  }
+}
+
+.tag {
+  color: $color-string;
+  .tag-text {
+    font-size: 15px;
+  }
+}
+
+.main-contents {
+  width: 80vw;
+}
+
+.main-header {
+  text-align: center;
+  padding: 0 1vw;
+}
+
+.goals-list {
+  padding: 1vh 1vw;
+}
+
+.goal-box {
+  margin-bottom: 20px;
+}
+
+.goal-top-box {
+  display: flex;
+  .goal-tag {
+    color: white;
+    margin-right: 2vw;
+    .goal-tag-text {
+      width: 70px;
+      padding: 8px;
+      font-size: 13px;
+      background-color: $color-third;
+      border-radius: 40px;
+      text-align: center;
+    }
+  }
+  .goal-date {
+    color: $color-second;
+    font-size: 16px;
+  }
+}
+
+.goal-bottom-box {
+  margin-left: 80px;
+  .goal-title-text {
+    color: $color-string;
+    font-size: 25px;
+  }
+}
+
+// footer
+footer {
+  width: 100vw;
+  height: 50px;
+  padding: 12PX;
+  text-align: center;
+  background-color: $color-second;
+  position: absolute;
+  bottom: 0;
+}
+
+// main(logs#index)
+.wrap_logs {
+  width: 100vw;
+  padding: 70px 10vw 50px;
+}
+.logs-goal {
+  display: flex;
+  flex-direction: column;
+}
+
+.logs-goal-title {
+  line-height: 1;
+  .logs-goal-title-text {
+    font-size: 25px;
+    color: $color-point;
+  }
+}
+
+.logs-goal-purpose {
+  padding-left: 20px;
+  margin: -15px 0 30px;
+  .logs-goal-purpose-text {
+    font-size: 18px;
+    color: $color-third;
+  }
+}
+
+.log {
+  display: flex;
+  margin-bottom: 20px;
+  .log-category {
+    width: 80px;
+    margin-right: 30px;
+    padding: 13px 0;
+    .ooda {
+      padding: 8px;
+      font-size: 13px;
+      color: white;
+      background-color: $color-third;
+      border-radius: 40px;
+      text-align: center;
+    }
+  }
+  .log-content {
+    color: $color-string;
+    .log-date {
+      font-size: 12px;
+    }
+  }
+}
+
+// logs form
+form {
+  width: 100vw;
+  height: 100px;
+  padding: 10px 10vw;
+  background-color: $color-second;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .category-select {
+    width: 10vw;
+    height: 50px;
+    color: $color-string;
+  }
+  .content-form {
+    width: 60vw;
+    height: 50px;
+    color: $color-string;
+  }
+  .submit-btn {
+    width: 8vw;
+    height: 50px;
+    color: $color-string;
+  }
+}
