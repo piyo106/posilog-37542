@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get 'logs/index'
+  resources :goals, only: [:new, :create]
+  resources :logs, only: [:index, :new, :create]
   root 'goals#index'
 end
