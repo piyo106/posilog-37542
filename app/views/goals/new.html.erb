@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <%= render 'shared/header' %>
+  <form action="" class="goal-input-field">
+    <label for="" class="goal-title-label">目標</label>
+    <input type="text" class="goal-title-input" placeholder="目指すものの目印">
+    <label for="" class="goal-purpose-label">目的</label>
+    <textarea name="" id="" class="goal-purpose-input" placeholder="目指すものの意図"></textarea>
+    <select name="" id="" class="tag-select" size="1">
+      <option value="">タグ選択</option>
+      <option value="1">Private</option>
+      <option value="2">Work</option>
+    </select>
+    <input type="submit" class="submit-btn" value="宣言！">
+  </form>
+  <%= render 'shared/footer' %>
+</div>

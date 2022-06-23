@@ -173,7 +173,7 @@ footer {
 }
 
 // logs form
-form {
+.ooda-form {
   width: 100vw;
   height: 100px;
   padding: 10px 10vw;
@@ -197,6 +197,38 @@ form {
   }
   .submit-btn {
     width: 8vw;
+    height: 50px;
+    color: $color-string;
+  }
+}
+
+// goals#new
+.goal-input-field {
+  width: 100vw;
+  padding: 70px 10vw 0;
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 25px;
+    color: $color-third;
+    padding: 20px 0;
+  }
+  .goal-title-input {
+    line-height: 2;
+    padding: 5px;
+  }
+  .goal-purpose-input {
+    padding: 5px;
+    height: 100px;
+    margin-bottom: 50px;
+  }
+  .tag-select {
+    padding: 5px;
+    width: 150px;
+    margin-bottom: 50px;
+  }
+  .submit-btn {
+    width: 100px;
     height: 50px;
     color: $color-string;
   }
