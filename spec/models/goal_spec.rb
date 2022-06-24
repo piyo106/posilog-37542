@@ -16,17 +16,17 @@ RSpec.describe Goal, type: :model do
       it '目標が空では保存できない' do
         @goal.title = ''
         @goal.valid?
-        expect(@goal.errors.full_messages).to include "Title can't be blank"
+        expect(@goal.errors.full_messages).to include "目標を入力してください"
       end
       it '目的が空では保存できない' do
         @goal.purpose = ''
         @goal.valid?
-        expect(@goal.errors.full_messages).to include "Purpose can't be blank"
+        expect(@goal.errors.full_messages).to include "目的を入力してください"
       end
       it 'タグが初期値だと保存できない' do
         @goal.tag_id = 1
         @goal.valid?
-        expect(@goal.errors.full_messages).to include "Tag can't be blank"
+        expect(@goal.errors.full_messages).to include "タグを入力してください"
       end
     end
   end

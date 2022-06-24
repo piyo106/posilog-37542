@@ -2,11 +2,11 @@
     <div class="top-page-header">
       <div class="logo">
         <h1>
-          <a href="#">PosiLog</a>
+          <%= link_to 'PosiLog', root_path, class: 'logo-text' %>
         </h1>
       </div>
       <div class="goal-btn">
-        <a href="#" class="goal-btn-text">目標を設定する</a>
+        <%= link_to '目標を設定する', new_goal_path, class: 'goal-btn-text' %>
       </div>
     </div>
   </header>

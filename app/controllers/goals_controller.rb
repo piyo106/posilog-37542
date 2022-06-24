@@ -1,5 +1,6 @@
 class GoalsController < ApplicationController
   def index
+    @goals = Goal.order("created_at DESC")
   end
 
   def new
