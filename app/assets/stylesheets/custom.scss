@@ -220,7 +220,6 @@ footer {
   .goal-purpose-input {
     padding: 5px;
     height: 100px;
-    margin-bottom: 50px;
   }
   .tag-select {
     padding: 5px;
@@ -232,4 +231,20 @@ footer {
     height: 50px;
     color: $color-string;
   }
+}
+
+.field_with_errors {
+  display: contents;
+}
+
+// error_messages
+.error-alert {
+  display: flex;
+  justify-content: center;
+}
+
+.error-message {
+  font-size: 1.3vw;
+  list-style: circle;
+  color: rgb(182, 48, 0);
 }

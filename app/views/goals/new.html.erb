@@ -1,16 +1,16 @@
 <div class="wrapper">
   <%= render 'shared/header' %>
-  <form action="" class="goal-input-field">
-    <label for="" class="goal-title-label">目標</label>
-    <input type="text" class="goal-title-input" placeholder="目指すものの目印">
-    <label for="" class="goal-purpose-label">目的</label>
-    <textarea name="" id="" class="goal-purpose-input" placeholder="目指すものの意図"></textarea>
-    <select name="" id="" class="tag-select" size="1">
-      <option value="">タグ選択</option>
-      <option value="1">Private</option>
-      <option value="2">Work</option>
-    </select>
-    <input type="submit" class="submit-btn" value="宣言！">
-  </form>
+  <%= form_with model: @goal, local: true do |f| %>
+    <div class="goal-input-field">
+      <%= render 'shared/error_messages', model: f.object %>
+      <%= f.label :title, :目標, class: 'goal-title-label' %>
+      <%= f.text_field :title, class: 'goal-title-input', placeholder: '目指すものの目印' %>
+      <%= f.label :title, :目的, class: 'goal-purpose-label' %>
+      <%= f.text_area :purpose, class: 'goal-purpose-input', placeholder: '目指すものの意図' %>
+      <%= f.label :title, :タグ %>
+      <%= f.collection_select(:tag_id, Tag.all, :id, :name, {}, {class: 'tag-select'}) %>
+      <%= f.submit '宣言！', class: 'submit-btn' %>
+    </div>
+  <% end %>
   <%= render 'shared/footer' %>
 </div>
