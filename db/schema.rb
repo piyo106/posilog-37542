@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_23_062821) do
+ActiveRecord::Schema.define(version: 2022_06_24_040940) do
 
   create_table "goals", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
@@ -20,4 +20,14 @@ ActiveRecord::Schema.define(version: 2022_06_23_062821) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "logs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "content", null: false
+    t.bigint "goal_id", null: false
+    t.integer "category_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["goal_id"], name: "index_logs_on_goal_id"
+  end
+
+  add_foreign_key "logs", "goals"
 end
