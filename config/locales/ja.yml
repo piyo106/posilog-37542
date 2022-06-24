@@ -8,3 +8,6 @@ ja:
         title: 目標
         purpose: 目的
         tag_id: タグ
+      log:
+        content: 内容
+        category_id: OODA

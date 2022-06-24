@@ -26,7 +26,7 @@ RSpec.describe Goal, type: :model do
       it 'タグが初期値だと保存できない' do
         @goal.tag_id = 1
         @goal.valid?
-        expect(@goal.errors.full_messages).to include "タグを入力してください"
+        expect(@goal.errors.full_messages).to include "タグを選択してください"
       end
     end
   end
