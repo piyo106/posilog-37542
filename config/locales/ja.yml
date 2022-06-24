@@ -2,3 +2,9 @@ ja:
   time:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
+  activerecord:
+    attributes:
+      goal:
+        title: 目標
+        purpose: 目的
+        tag_id: タグ
