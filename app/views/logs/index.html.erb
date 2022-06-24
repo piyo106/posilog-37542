@@ -66,15 +66,12 @@
       </div>
     </div>
   </main>
-  <form action="" class="ooda-form">
-    <select name="" id="" class="category-select" size="1">
-      <option value="">OODA選択</option>
-      <option value="1">Observe</option>
-      <option value="2">Orient</option>
-      <option value="3">Decide</option>
-      <option value="4">Act</option>
-    </select>
-    <textarea name="" id="" class="content-form"></textarea>
-    <input type="submit" class="submit-btn" value="記録する">
-  </form>
+  <%= form_with model: [@goal, @log], local: true do |f| %>
+    <div class="ooda-form">
+      <%= render 'shared/error_messages', model: f.object %>
+      <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class: 'category-select'}) %>
+      <%= f.text_area :content, class: 'content-form', placeholder: '内容を入力してください' %>
+      <%= f.submit '記録する', class: 'submit-btn' %>
+    </div>
+  <% end %>
 </div>
