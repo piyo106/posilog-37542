@@ -76,6 +76,7 @@ h2 {
 
 .goals-list {
   padding: 1vh 1vw;
+  list-style: none;
 }
 
 .goal-box {
@@ -107,6 +108,7 @@ h2 {
   .goal-title-text {
     color: $color-string;
     font-size: 25px;
+    text-decoration: none;
   }
 }
 
@@ -216,10 +218,12 @@ footer {
   .goal-title-input {
     line-height: 2;
     padding: 5px;
+    color: $color-string;
   }
   .goal-purpose-input {
     padding: 5px;
     height: 100px;
+    color: $color-string;
   }
   .tag-select {
     padding: 5px;
