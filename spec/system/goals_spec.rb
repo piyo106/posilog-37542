@@ -16,8 +16,8 @@ RSpec.describe "目標設定機能", type: :system do
       # トップページに移動する
       basic_pass root_path
       visit root_path
-      # トップページに「目標を設定する」ボタンがあることを確認する
-      expect(page).to have_content('目標を設定する')
+      # トップページに「目標を宣言する」ボタンがあることを確認する
+      expect(page).to have_content('目標を宣言する')
       # 目標設定ページに遷移する
       visit new_goal_path
       # DBに保存されていないことを確認する
