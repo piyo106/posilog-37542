@@ -52,7 +52,7 @@ https://posilog-37542.herokuapp.com/
 - インフラ　　　　：Heroku
 - テスト　　　　　：RSpec
 - テキストエディタ：Visual Studio Code
-- タスク管理　　　：GitHub, Notion
+- タスク管理　　　：GitHub
 # ローカルでの動作方法
 ```bash
 % git clone https://github.com/piyo106/posilog-37542.git
