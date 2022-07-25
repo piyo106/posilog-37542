@@ -1,0 +1,19 @@
+<div class="goal-box">
+  <div class="goal-top-box">
+    <div class="goal-tag">
+      <p class="goal-tag-text">
+        <%= goal.tag.name %>
+      </p>
+    </div>
+    <div class="goal-date">
+      <p class="goal-date-text">
+        <%= l goal.created_at %>
+      </p>
+    </div>
+  </div>
+  <div class="goal-bottom-box">
+    <div class="goal-title">
+      <%= link_to goal.title, goal_logs_path(goal), class: 'goal-title-text' %>
+    </div>
+  </div>
+</div>
