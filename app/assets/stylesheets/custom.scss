@@ -150,6 +150,14 @@ footer {
   }
 }
 
+@mixin ooda {
+  padding: 8px;
+  font-size: 13px;
+  color: white;
+  border-radius: 40px;
+  text-align: center;
+}
+
 .log {
   display: flex;
   margin-bottom: 20px;
@@ -157,13 +165,21 @@ footer {
     width: 80px;
     margin-right: 30px;
     padding: 13px 0;
-    .ooda {
-      padding: 8px;
-      font-size: 13px;
-      color: white;
+    .ooda-Observe {
+      background-color: $color-second;
+      @include ooda
+    }
+    .ooda-Orient {
       background-color: $color-third;
-      border-radius: 40px;
-      text-align: center;
+      @include ooda
+    }
+    .ooda-Decide {
+      background-color: $color-point;
+      @include ooda
+    }
+    .ooda-Act {
+      background-color: #f42d2da9;
+      @include ooda
     }
   }
   .log-content {
