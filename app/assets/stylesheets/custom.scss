@@ -40,6 +40,14 @@ $color-string: #757575;
 
 // main(goals#index)
 
+@mixin tag-color {
+  width: 70px;
+  padding: 8px;
+  font-size: 13px;
+  border-radius: 40px;
+  text-align: center;
+}
+
 .wrap {
   width: 100vw;
   padding: 70px 10vw 0;
@@ -52,16 +60,21 @@ h2 {
 
 .side-bar {
   width: 20vw;
-  padding: 0 2vw;
+  padding: 50px 2vw 0;
   .side-bar-header h2 {
     font-size: 18px;
   }
 }
 
 .tag {
-  color: $color-string;
-  .tag-text {
-    font-size: 15px;
+  color: white;
+  .tag-Private-text {
+    @include tag-color;
+    background-color: $color-third
+  }
+  .tag-Work-text {
+    @include tag-color;
+    background-color: $color-point
   }
 }
 
@@ -83,18 +96,19 @@ h2 {
   margin-bottom: 20px;
 }
 
+
 .goal-top-box {
   display: flex;
   .goal-tag {
     color: white;
     margin-right: 2vw;
-    .goal-tag-text {
-      width: 70px;
-      padding: 8px;
-      font-size: 13px;
+    .goal-tag-Private-text {
       background-color: $color-third;
-      border-radius: 40px;
-      text-align: center;
+      @include tag-color
+    }
+    .goal-tag-Work-text {
+      background-color: $color-point;
+      @include tag-color
     }
   }
   .goal-date {
