@@ -9,7 +9,7 @@ class LogsController < ApplicationController
     @goal = Goal.find(params[:goal_id])
     @log = @goal.logs.new(log_params)
     if @log.save
-      redirect_to  goal_logs_path(@goal)
+      redirect_to  @goal
     else
       # @logs = @goal.logs
       render :index
