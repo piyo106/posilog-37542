@@ -1,6 +1,11 @@
 class GoalsController < ApplicationController
   def index
-    @goals = Goal.order("created_at DESC")
+    if params[:tag_id]
+      @tag = Tag.find(params[:tag_id])
+      @goals = @tag.goals.order("created_at DESC")
+    else
+      @goals = Goal.order("created_at DESC")
+    end
   end
 
   def new

@@ -7,10 +7,10 @@
       </div>
       <div class="tags-list">
         <div class="tag">
-          <p class="tag-Private-text">Private</p>
+          <%= link_to "Private", goals_path(tag_id: 2), class: 'tag-Private-text' %>
         </div>
         <div class="tag">
-          <p class="tag-Work-text">Work</p>
+          <%= link_to "Work", goals_path(tag_id: 3), class: 'tag-Work-text' %>
         </div>
       </div>
     </div>
