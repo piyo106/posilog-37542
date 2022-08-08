@@ -31,8 +31,7 @@ https://posilog-37542.herokuapp.com/
 [PosiLog要件定義 -Googleスプレッドシート-](https://docs.google.com/spreadsheets/d/1u2AfiK80okOdCMyYK83T_ZaS5AdI5MpfXlbUsZvEuf4/edit#gid=914531170)
 # 実装した機能についての画像やGIF
 ## トップページ
-[![Image from Gyazo](https://i.gyazo.com/6763533c2a0d8b455ea83ea3fb6c8bc1.png)](https://gyazo.com/6763533c2a0d8b455ea83ea3fb6c8bc1)
-
+[![Image from Gyazo](https://i.gyazo.com/43abd3c44075dc42839bebfded259472.png)](https://gyazo.com/43abd3c44075dc42839bebfded259472)
 ## 目標宣言機能
 [![Image from Gyazo](https://i.gyazo.com/c238af4d7a03f3590e5f1f781e04a593.gif)](https://gyazo.com/c238af4d7a03f3590e5f1f781e04a593)
 
